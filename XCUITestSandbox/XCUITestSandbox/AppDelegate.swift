@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  XCUITestSandbox
-//
-//  Created by Paul Hudson on 24/04/2018.
-//  Copyright © 2018 Hacking with Swift. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
