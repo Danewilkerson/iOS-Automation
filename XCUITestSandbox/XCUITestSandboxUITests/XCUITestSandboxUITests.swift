@@ -27,9 +27,6 @@ class XCUITestSandboxUITests: XCTestCase {
         app.keys["t"].tap()
         app.keyboards.buttons["Return"].tap()
         XCTAssertTrue(app.staticTexts["test"].exists)
-
-        app.sliders["Completion"].swipeRight()
-        app.segmentedControls.buttons["Omega"].tap()
     }
     
     
@@ -51,6 +48,12 @@ class XCUITestSandboxUITests: XCTestCase {
         }
         
         XCTAssertTrue(completion == "0%")
+    }
+    
+    func testSegmentSelections() {
+        let app = XCUIApplication()
+        app.segmentedControls.buttons["Omega"].tap()
+        app.segmentedControls.buttons["Alpha"].tap()
     }
 
 }
