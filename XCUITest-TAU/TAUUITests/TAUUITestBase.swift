@@ -1,10 +1,3 @@
-//
-//  TAUUITestBase.swift
-//  TAUUITests
-//
-//  Created by Dane Wilkerson on 10/11/20.
-//
-
 import Foundation
 import XCTest
 
