@@ -11,6 +11,15 @@ class TAUUITests: TAUUITestBase {
         XCTAssertTrue(app.staticTexts["Please Enter City"].exists)
     }
     
+    func testAllElementsOfMainScreenPOMStyle() {
+        
+        TAUScreen.welcomeMessage.element.tap()
+        TAUScreen.enterCityLabel.element.tap()
+        TAUScreen.enrollButton.element.tap()
+        TAUScreen.taulogo.element.tap()
+        XCTAssertTrue(TAUScreen.enterCityLabel.element.exists)
+    }
+    
     func testThankYouMessage() {
         
         app.textFields["city"].tap()
@@ -36,11 +45,4 @@ class TAUUITests: TAUUITestBase {
         app.buttons["Enroll"].tap()
         XCTAssertTrue(app.staticTexts["Please Enter City"].exists)
     }
-    
-    
-    
-    
-    
-    
-
 }
