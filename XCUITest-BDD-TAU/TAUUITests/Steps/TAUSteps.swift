@@ -24,9 +24,7 @@ extension TAUUITestBase {
     
     func thenIShouldSeeThankYouMessage() {
         XCTContext.runActivity(named: "Then I should see a Thanks Message") { _  in
-            XCTAssertTrue(TAUScreen.welcomeMessage.element.exists)
+            XCTAssertElementExist(TAUScreen.welcomeMessage.element)
         }
     }
 }
-
-

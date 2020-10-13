@@ -17,5 +17,31 @@ class TAUUITestBase: XCTestCase {
 
     }
     
+    func XCTAssertElementExist(_ element: XCUIElement) {
+        let isElementExist = element.waitForExistence(timeout: 10)
+        if isElementExist {
+            XCTAssertTrue(element.exists)
+        }
+    }
     
+    func XCTAssertElementEnabled(_ element: XCUIElement) {
+        let isElementExist = element.waitForExistence(timeout: 10)
+        if isElementExist {
+            XCTAssertTrue(element.isEnabled)
+        }
+    }
+    
+    func XCTAssertElementSelected(_ element: XCUIElement) {
+        let isElementExist = element.waitForExistence(timeout: 10)
+        if isElementExist {
+            XCTAssertTrue(element.isSelected)
+        }
+    }
+    
+    func XCTAssertElementHittable(_ element: XCUIElement) {
+        let isElementExist = element.waitForExistence(timeout: 10)
+        if isElementExist {
+            XCTAssertTrue(element.isHittable)
+        }
+    }
 }

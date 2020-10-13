@@ -1,18 +1,9 @@
+import Foundation
 import XCTest
 
 class TAUUITests: TAUUITestBase {
-
-    func testAllElementsOfMainScreen() {
-        
-        app.staticTexts["welcomeMessage"].tap()
-        app.staticTexts["enterCity"].tap()
-        app.buttons["Enroll"].tap()
-        app.images["TAUlogo"].tap()
-        XCTAssertTrue(app.staticTexts["Please Enter City"].exists)
-    }
-    
+    // pom style
     func testAllElementsOfMainScreenPOMStyle() {
-        
         TAUScreen.welcomeMessage.element.tap()
         TAUScreen.enterCityLabel.element.tap()
         TAUScreen.enrollButton.element.tap()
@@ -21,15 +12,14 @@ class TAUUITests: TAUUITestBase {
     }
     
     func testThankYouMessage() {
-        
-        app.textFields["city"].tap()
-        app.textFields["city"].typeText("London")
-        app.buttons["Enroll"].tap()
-        XCTAssertTrue(app.staticTexts["Thanks for Joining!"].exists)
+        TAUScreen.cityTextField.element.tap()
+        TAUScreen.cityTextField.element.typeText("Daneville")
+        TAUScreen.enrollButton.element.tap()
+        XCTAssertTrue(TAUScreen.welcomeMessage.element.exists)
     }
     
+    // manual style
     func testTwoEnrollOneFail() {
-        
         app.textFields["city"].tap()
         app.textFields["city"].typeText("London")
         app.buttons["Enroll"].tap()
