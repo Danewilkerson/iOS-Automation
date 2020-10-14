@@ -9,15 +9,15 @@ extension TAUUITestBase {
         }
     }
     
-    func whenIEnter(city: String) {
+    func whenIEnterCity(city: String) {
         XCTContext.runActivity(named: "When I enter \(city)") { _  in
             TAUScreen.cityTextField.element.tap()
             TAUScreen.cityTextField.element.typeText(city)
         }
     }
     
-    func whenIEnrolled() {
-        XCTContext.runActivity(named: "When I Enrolled") { _  in
+    func whenITapEnrollButton() {
+        XCTContext.runActivity(named: "When I Tap the Enroll Button") { _  in
             TAUScreen.enrollButton.element.tap()
         }
     }
