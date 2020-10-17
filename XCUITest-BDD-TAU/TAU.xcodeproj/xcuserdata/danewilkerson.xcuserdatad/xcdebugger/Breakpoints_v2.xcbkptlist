@@ -48,8 +48,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "4"
             endingLineNumber = "4"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "BDDTest"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -64,15 +64,15 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "7"
             endingLineNumber = "7"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "testThankYouMessageBDD()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "22FF24BC-01DF-414E-89BE-FCEBF9BE643F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TAUUITests/Tests/TAUUITests.swift"

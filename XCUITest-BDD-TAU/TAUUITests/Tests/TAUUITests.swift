@@ -3,7 +3,7 @@ import XCTest
 
 class TAUUITests: TAUUITestBase {
     // pom style
-    func testAllElementsOfMainScreenPOMStyle() {
+    func testAllElementsOfMainScreen() {
         TAUScreen.welcomeMessage.element.tap()
         TAUScreen.enterCityLabel.element.tap()
         TAUScreen.enrollButton.element.tap()
